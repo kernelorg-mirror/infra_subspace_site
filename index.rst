@@ -9,6 +9,7 @@ Hosted domains
 .. toctree::
    :maxdepth: 1
 
+   linux.kernel.org
    lists.linux.dev
 
 Subscribing
