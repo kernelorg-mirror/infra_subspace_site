@@ -25,7 +25,7 @@ Many mailing lists hosted on subspace.kernel.org are also made available
 via `public-inbox <https://public-inbox.org>`_ archives which can be
 efficiently replicated, indexed, and accessed in a decentralized
 fashion. If a public-inbox archive is made available, the link to it
-will be made available in the list table.
+will be provided in the list table.
 
 We will be deploying other ways to subscribe to mailing list discussions
 in the near future, once newer features of public-inbox are released and
@@ -37,7 +37,7 @@ If you would like to host a mailing list on subspace, please send a
 request to helpdesk@kernel.org describing your needs.
 
 .. important::
-   We can only host lists dedicated to the Linux kernel development.
+   We can only host mailing lists dedicated to Linux development.
 
 Contacts
 --------
