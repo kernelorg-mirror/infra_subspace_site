@@ -15,9 +15,6 @@ Flags
 
 Requesting list hosting
 -----------------------
-.. important::
-   We can only host mailing lists dedicated to Linux development.
-
 If you would like to host a mailing list on lists.linux.dev, please send
 a request to helpdesk@kernel.org describing your needs. Please adhere to
 the following example template::
@@ -40,8 +37,11 @@ this is required (usually reserved for announcement-type lists).
 .. note::
    Since "linux" is already in the domain, there is generally no reason
    to name the list linux-somesuch@lists.linux.dev, unless you are
-   migrating an existing list from another location of have some other
+   migrating an existing list from another location or have some other
    convincing need to include linux- in the name.
+
+.. important::
+   We can only host mailing lists dedicated to Linux development.
 
 Contacts
 --------
