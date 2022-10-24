@@ -11,6 +11,7 @@ Hosted domains
 
    linux.kernel.org
    lists.linux.dev
+   lists.linuxfoundation.org
 
 Subscribing
 -----------
