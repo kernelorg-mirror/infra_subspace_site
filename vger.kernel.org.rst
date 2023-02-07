@@ -1,7 +1,9 @@
 vger.kernel.org
 ===============
 
-.. warning: Migration in Progress!
+.. warning:
+
+   Migration in Progress!
 
 The venerable LKML mailing list system at vger.kernel.org is in the
 process of being migrated to the new subspace system.
