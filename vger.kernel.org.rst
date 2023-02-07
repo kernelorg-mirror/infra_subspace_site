@@ -12,7 +12,7 @@ the list you are looking for is not listed below, please visit
 http://vger.kernel.org/vger-lists.html
 
 .. csv-table::
-   :widths: 20, 45, 5, 25, 5
+   :widths: 25, 45, 3, 24, 3
    :header-rows: 1
    :stub-columns: 1
    :file: _listinfo/vger.kernel.org.csv

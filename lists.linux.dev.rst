@@ -2,7 +2,7 @@ lists.linux.dev
 ===============
 
 .. csv-table::
-   :widths: 20, 45, 5, 25, 5
+   :widths: 25, 45, 3, 24, 3
    :header-rows: 1
    :stub-columns: 1
    :file: _listinfo/lists.linux.dev.csv
