@@ -1,17 +1,15 @@
 vger.kernel.org
 ===============
 
-.. warning:
+.. note:: Migration in Progress!
 
-   Migration in Progress!
+   The venerable LKML mailing list system at vger.kernel.org is in the
+   process of being migrated to the new subspace system.
 
-The venerable LKML mailing list system at vger.kernel.org is in the
-process of being migrated to the new subspace system.
-
-During the migration period, some lists may continue to be managed by
-the legacy infrastructure, and some may already be forwarded here. If
-the list you are looking for is not listed below, please visit
-http://vger.kernel.org/vger-lists.html
+   During the migration period, some lists may continue to be managed by
+   the legacy infrastructure, and some may already be forwarded here. If
+   the list you are looking for is not listed below, please visit
+   http://vger.kernel.org/vger-lists.html
 
 .. csv-table::
    :widths: 25, 45, 3, 24, 3
