@@ -37,6 +37,11 @@ documentation for your app or provider and make sure that it is
 configured to send outgoing mail only in plain text, without the HTML
 part.
 
+The following site may provide information about which client to use and
+how to properly configure it to send plain text email:
+
+- https://useplaintext.email/
+
 .. note::
    A lot of mobile phone apps do not have any way to disable sending
    HTML mail, so please use a regular desktop or browser app.
