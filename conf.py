@@ -10,5 +10,6 @@ html_theme = 'alabaster'
 html_theme_path = [alabaster.get_path()]
 html_theme_options = {
         'page_width': '70em',
+        'show_powered_by': False,
 }
 master_doc = 'index'
