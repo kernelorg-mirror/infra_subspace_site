@@ -124,6 +124,9 @@ For example, this is quoting too much::
 
     On Mon, Oct 23, 2023 at 08:55:56AM -1000, Rando Reviewer wrote:
     > Hello:
+
+    Hi,
+
     > 
     > Thank you very much for following up with replies! I have
     > re-reviewed the patches you sent, but I still have concerns.
@@ -141,6 +144,7 @@ For example, this is quoting too much::
     Yes, we have dedicated one hundred billion dollars to these
     efforts.
     
+    Thank you,
     -- 
     Dev Eloper
     Frobbledev Inc
@@ -162,9 +166,12 @@ message to only leave the paragraph needed to understand your reply::
     > Are there resources allocated at your company to make sure
     > the driver is properly rewritten to use systemd-flargle?
 
+    Hi,
+
     Yes, we have dedicated one hundred billion dollars to these
     efforts.
 
+    Thank you,
     -- 
     Dev Eloper
     Frobbledev Inc
@@ -185,6 +192,19 @@ to understand the proper context.
 If you do decide to quote some code to illustrate your message, try to
 include only those lines that are relevant to the problem and ``[skip]``
 the code that is unnecessary to understand your point.
+
+Be terse, but polite
+--------------------
+Participating in Linux kernel development often means sending hundreds
+of emails per day. Longtime users of the mailing lists have therefore
+become accustomed to the short and to the point style of communication
+that maximizes "signal" and minimizes "noise."
+
+However, "terse, to the point" communication should not be viewed as a
+license to be rude or dismissive. Saying "Hello," "Thank you" and
+showing basic professional courtesy is signal, not noise. Try to find
+time to appreciate and praise the work of your peers and the collective
+efforts of the Linux development community.
 
 Other resources
 ---------------
