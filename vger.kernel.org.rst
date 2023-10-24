@@ -12,7 +12,7 @@ vger.kernel.org
    http://vger.kernel.org/vger-lists.html
 
 .. csv-table::
-   :widths: 30, 45, 2, 20, 3
+   :widths: 30, 47, 2, 18, 3
    :header-rows: 1
    :stub-columns: 1
    :file: _listinfo/vger.kernel.org.csv
