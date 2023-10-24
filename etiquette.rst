@@ -2,8 +2,8 @@ Mailing list etiquette
 ======================
 
 .. note::
-   This page is the adapted version of ``Notes about netiquette
-   <https://people.kernel.org/tglx/notes-about-netiquette>`` by Thomas
+   This page is the adapted version of `Notes about netiquette
+   <https://people.kernel.org/tglx/notes-about-netiquette>`_ by Thomas
    Gleixner.
 
 Send "plain text" mail only
@@ -172,3 +172,12 @@ to understand the proper context.
 If you do decide to quote some code to illustrate your message, try to
 include only those lines that are relevant to the problem and ``[skip]``
 the code that is unnecessary to understand your point.
+
+Other resources
+---------------
+The following sites also discuss mailing list etiquette and may be a
+good source of additional information:
+
+- `Notes about netiquette <https://people.kernel.org/tglx/notes-about-netiquette>`_
+- `Kernel Newbies Mailing List Guidelines <https://kernelnewbies.org/mailinglistguidelines>`_
+- `Use Plaintext Email <https://useplaintext.email/>`_
