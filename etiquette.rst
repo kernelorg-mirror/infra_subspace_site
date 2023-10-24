@@ -202,7 +202,7 @@ that maximizes "signal" and minimizes "noise."
 
 However, "terse, to the point" communication should not be viewed as a
 license to be rude or dismissive. Saying "Hello," "Thank you" and
-showing basic professional courtesy is signal, not noise. Try to find
+showing basic professional courtesy is signal, not noise. Please find
 time to appreciate and praise the work of your peers and the collective
 efforts of the Linux development community.
 
