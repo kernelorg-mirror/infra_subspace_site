@@ -180,7 +180,7 @@ In general, "how much context to leave" is subjective and will vary from
 developer to developer, but they will all get annoyed if they have to
 skip multiple pages of quoted text to see your reply, or if they have to
 needlessly paginate through an untrimmed quoted bottom of the previous
-message just to see that there's nothing else to see.
+message just to find that there's nothing else there.
 
 Do not quote large chunks of code
 ---------------------------------
