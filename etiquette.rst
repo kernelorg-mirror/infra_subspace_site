@@ -1,10 +1,8 @@
 Mailing list etiquette
 ======================
 
-.. note::
-   This page is the adapted version of `Notes about netiquette
-   <https://people.kernel.org/tglx/notes-about-netiquette>`_ by Thomas
-   Gleixner.
+Please follow these guidelines when sending mail to the Linux Kernel
+mailing lists.
 
 Send "plain text" mail only
 ---------------------------
@@ -14,15 +12,17 @@ mail is not accepted for the following reasons:
 
 - HTML is a very rich standard that requires complex parsing/rendering
   engines to properly display message contents. These rendering engines
-  have very large attack surfaces that allow bad actors to perform
-  actions like deliver harmful payloads, track the recipients' location,
-  leak private details about their work environment, etc.
+  have very large attack surfaces that may be exploited to deliver
+  harmful payloads, track the recipients' location, leak private details
+  about their work environment, etc. Disallowing HTML mail helps remove
+  a large attack vector and improve overall security.
 - HTML mail is very commonly used by spammers to defeat anti-spam
-  tooling (e.g. by hiding large parts of the message with invisible
-  fonts, using hidden elements, etc).
+  tooling (e.g. by hiding large parts of the message with unreadable
+  fonts, using hidden elements, etc). Rejecting HTML messages
+  dramatically reduces the amount of spam sent to the list.
 - Many kernel developers prefer using terminal-based email tools that
   better integrate with their workflows. Reading HTML messages in such
-  tools is often not supported.
+  tools is often not supported by design.
 - Messages that send both plain text and HTML parts are often seen as
   unnecessary bloat that just consumes resources.
 
@@ -42,29 +42,25 @@ how to properly configure it to send plain text email:
 
 - https://useplaintext.email/
 
-.. note::
-   A lot of mobile phone apps do not have any way to disable sending
-   HTML mail, so please use a regular desktop or browser app.
-
-Use a succinct but descriptive subject line
--------------------------------------------
+Use a short but descriptive subject line
+----------------------------------------
 The subject line is what the list users will see first, and they will
 decide whether to read your message or skip it based on whether they
 think your email is relevant.
 
-Bad example::
+No good::
 
     Subject: help
 
-Good example::
+Much better::
 
     Subject: backporting frobbledev to kernel 5.15
 
-Bad example::
+No good::
 
     Subject: bug
 
-Good example::
+Much better::
 
     Subject: frobbledev data corruption with kernel 6.5
 
@@ -83,18 +79,21 @@ specifically avoid this situation.
 Always "reply to all"
 ---------------------
 If you received a reply to your message on the list, always reply-all
-when composing a response, unless you have a good reason for doing so
-(e.g. discussing a private matter). Replying only to the sender of the
-e-mail immediately excludes all other list recipients and defeats the
-purpose of mailing lists by turning a public discussion into a private
-conversation.
+when composing a response, unless you have a good reason to do otherwise
+(e.g. discussing a sensitive matter off-list). Replying only to the
+sender of the e-mail immediately excludes all other list recipients and
+defeats the purpose of mailing lists by turning a public discussion into
+a private conversation.
+
+You should be able to configure your email client to use "Reply All" as
+the default action when replying to email.
 
 Do not "top-post" when replying
 -------------------------------
 Top-posting is the preferred style in corporate communication, but
 kernel mailing list discussions commonly require proper context for
 maximum clarity. For this reason, kernel mailing lists exclusively
-require that all replies are sent as interleaved quoted replies.
+require that all communication is sent as interleaved quoted replies.
 
 For example::
 
@@ -104,7 +103,7 @@ For example::
     > - your device is frobbled
 
     In the case of frobbling, we reinitialize the device after a
-    5-second sleep in firmware.
+    5-second sleep.
 
     > - your device is blimpoxed
 
@@ -138,7 +137,8 @@ For example, this is quoting too much::
     > Are there resources allocated at your company to make sure
     > the driver is properly rewritten to use systemd-flargle?
     
-    Yes, we have dedicated a bajillion dollars to these efforts.
+    Yes, we have dedicated one hundred billion dollars to these
+    efforts.
     
     -- 
     Dev Eloper
@@ -161,7 +161,8 @@ that is completely irrelevant::
     > Are there resources allocated at your company to make sure
     > the driver is properly rewritten to use systemd-flargle?
 
-    Yes, we have dedicated a bajillion dollars to these efforts.
+    Yes, we have dedicated one hundred billion dollars to these
+    efforts.
 
     -- 
     Dev Eloper

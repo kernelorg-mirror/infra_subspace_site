@@ -9,6 +9,6 @@ author = 'kernel.org'
 html_theme = 'alabaster'
 html_theme_path = [alabaster.get_path()]
 html_theme_options = {
-        'page_width': '80em',
+        'page_width': '70em',
 }
 master_doc = 'index'
