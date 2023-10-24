@@ -117,7 +117,8 @@ Trim your quotes when replying
 ------------------------------
 Maintainer time is extremely precious, so they will greatly appreciate
 if you trim the quoted text in your reply and only leave that
-information which is crucial to establish the context of your reply.
+information which is crucial to establish the context of your
+communication.
 
 For example, this is quoting too much::
 
@@ -154,8 +155,8 @@ For example, this is quoting too much::
     > Reviewing-is-our.biz
 
 This is much better because it leaves just enough context for the
-reviewer to understand your reply and removes the bottom of the message
-that is completely irrelevant::
+reviewer to understand your reply. It trims the top and bottom of the
+message to only leave the paragraph needed to understand your reply::
 
     On Mon, Oct 23, 2023 at 08:55:56AM -1000, Rando Reviewer wrote:
     > Are there resources allocated at your company to make sure
@@ -167,6 +168,12 @@ that is completely irrelevant::
     -- 
     Dev Eloper
     Frobbledev Inc
+
+In general, "how much context to leave" is subjective and will vary from
+developer to developer, but they will all get annoyed if they have to
+skip multiple pages of quoted text to see your reply, or if they have to
+needlessly paginate through an untrimmed quoted bottom of the previous
+message just to see that there's nothing else to see.
 
 Do not quote large chunks of code
 ---------------------------------
