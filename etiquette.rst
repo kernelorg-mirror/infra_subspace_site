@@ -159,8 +159,8 @@ For example, this is quoting too much::
     > Reviewing-is-our.biz
 
 This is much better because it leaves just enough context for the
-reviewer to understand your reply. It trims the top and bottom of the
-message to only leave the paragraph needed to understand your reply::
+reviewer to understand your reply. It trims the top and the bottom of
+the message to only leave the relevant paragraph::
 
     On Mon, Oct 23, 2023 at 08:55:56AM -1000, Rando Reviewer wrote:
     > Are there resources allocated at your company to make sure
