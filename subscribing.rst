@@ -1,7 +1,8 @@
 Subscribing to lists
 ====================
 
-.. important:
+.. note::
+
    Most lists do not require subscribing in order to post a message, so
    you only need to subscribe if you are interested in receiving a copy
    of all mail messages sent to the list.
@@ -15,20 +16,32 @@ send a message to a special subscription address of the list.
 For example, if you want to subscribe to ``test@lists.linux.dev``:
 
 - to receive an **individual copy of every message sent to the list**,
-  send an email to ``test+subscribe@lists.linux.dev``
-- to receive a **daily digest of all messages sent to the list**, 
-  send an email to ``test+subscribe-digest@lists.linux.dev``
+  send an email to::
+
+    test+subscribe@lists.linux.dev
+
+- to receive a **daily digest of all messages sent to the list**,
+  send an email to::
+
+    test+subscribe-digest@lists.linux.dev
 
 The subject or body of the message do not make a difference and can be
 left blank.
+
+.. warning:: If you use Gmail
+
+   If you are a Gmail user, please do not subscribe to high-volume
+   lists, because this will almost certainly push you over Gmail's
+   delivery quotas (60 messages per second, specifically). This may
+   cause you to miss important mail.
 
 Unsubscribing to stop receiving list mail
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To stop receiving mail from any list, send a message to the unsubscribe
 address of the list. For example, to unsubscribe from either the full or
-digest version of the test list, use the same address:
+digest version of the test list, send a message to::
 
-- send a message to ``test+unsubscribe@lists.linux.dev``
+    test+unsubscribe@lists.linux.dev
 
 Subscribing via NNTP
 --------------------
@@ -38,7 +51,7 @@ you can subscribe to it via NNTP.
 
 In your usenet-capable client, provide the following NNTP server to use:
 
-- nntp://nntp.lore.kernel.org
+- ``nntp://nntp.lore.kernel.org``
 
 Once the connection is established, you can retrieve the list of groups
 and subscribe to the list you need.
