@@ -21,6 +21,7 @@ Important information
 
    subscribing
    etiquette
+   software
 
 Contacts
 --------
