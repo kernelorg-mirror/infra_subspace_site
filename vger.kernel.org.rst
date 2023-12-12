@@ -22,3 +22,16 @@ Flags
 * **a**: announcements-only list with restricted posting
 * **s**: only subscribers may post
 * **m**: subscribers and/or posts to the list are moderated
+
+Requesting list hosting
+-----------------------
+We are not currently accepting new list hosting requests for
+vger.kernel.org. If you would like a Linux related mailing list hosted
+on this platform, please request it under the lists.linux.dev domain:
+
+* `lists.linux.dev <https://subspace.kernel.org/lists.linux.dev.html>`_
+
+Contacts
+--------
+To report abuse of with any other requests, please email
+postmaster@kernel.org.
