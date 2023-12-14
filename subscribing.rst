@@ -31,9 +31,13 @@ left blank.
 .. warning:: If you use Gmail
 
    If you are a Gmail user, please do not subscribe to high-volume
-   lists, because this will almost certainly push you over Gmail's
-   delivery quotas (60 messages per second, specifically). This may
-   cause you to miss important mail.
+   lists, because **this will almost certainly push you over Gmail's
+   delivery quotas** (60 messages per minute, specifically). This may
+   cause you to miss important mail not just from us, but from other
+   senders as well.
+
+   Please either subscribe to the digest version, or use alternative
+   mechanisms of receiveing mail that are described below.
 
 Unsubscribing to stop receiving list mail
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
