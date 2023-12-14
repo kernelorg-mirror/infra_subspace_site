@@ -1,16 +1,6 @@
 vger.kernel.org
 ===============
 
-.. note:: Migration in Progress!
-
-   The venerable LKML mailing list system at vger.kernel.org is in the
-   process of being migrated to the new subspace system.
-
-   During the migration period, some lists may continue to be managed by
-   the legacy infrastructure, and some may already be forwarded here. If
-   the list you are looking for is not listed below, please visit
-   http://vger.kernel.org/vger-lists.html
-
 .. csv-table::
    :widths: 30, 47, 2, 18, 3
    :header-rows: 1
@@ -22,6 +12,15 @@ Flags
 * **a**: announcements-only list with restricted posting
 * **s**: only subscribers may post
 * **m**: subscribers and/or posts to the list are moderated
+
+What happened to majordomo?
+---------------------------
+Majordomo commands are no longer supported after the migration away from
+legacy vger infrastructure. Please use the "sub/unsub" links in the
+table above to subscribe to a mailing list and see this page for further
+information:
+
+- https://subspace.kernel.org/subscribing.html
 
 Requesting list hosting
 -----------------------
