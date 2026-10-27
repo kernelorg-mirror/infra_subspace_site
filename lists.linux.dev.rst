@@ -45,5 +45,5 @@ this is required (usually reserved for announcement-type lists).
 
 Contacts
 --------
-To report abuse of with any other requests, please email
+To report abuse or with any other requests, please email
 postmaster@kernel.org.

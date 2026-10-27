@@ -32,5 +32,5 @@ on this platform, please request it under the lists.linux.dev domain:
 
 Contacts
 --------
-To report abuse of with any other requests, please email
+To report abuse or with any other requests, please email
 postmaster@kernel.org.

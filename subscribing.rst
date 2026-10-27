@@ -37,9 +37,9 @@ left blank.
    senders as well.
 
    Please either subscribe to the digest version, or use alternative
-   mechanisms of receiveing mail that are described below.
+   mechanisms of receiving mail that are described below.
 
-Unsubscribing to stop receiving list mail
+Unsubscribing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To stop receiving mail from any list, send a message to the unsubscribe
 address of the list. For example, to unsubscribe from either the full or
@@ -63,3 +63,11 @@ and subscribe to the list you need.
 The group names are usually the list-id of the list in reverse order.
 For example, if the list address is ``patches@lists.linux.dev``, then
 the NNTP group will be ``dev.linux.lists.patches``.
+
+Reading lists without subscribing
+---------------------------------
+All lists with archives are available on https://lore.kernel.org/. You
+can read them in your browser, or use lei_ to pull the threads you are
+interested in into a local mailbox.
+
+.. _lei: https://people.kernel.org/monsieuricon/lore-lei-part-1-getting-started

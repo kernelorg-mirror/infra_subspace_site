@@ -25,5 +25,5 @@ Important information
 
 Contacts
 --------
-To report abuse of with any other requests, please email
+To report abuse or with any other requests, please email
 postmaster@kernel.org.
