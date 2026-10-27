@@ -47,6 +47,22 @@ digest version of the test list, send a message to::
 
     test+unsubscribe@lists.linux.dev
 
+Receiving list mail with korgalore
+----------------------------------
+korgalore_ copies messages from the lore.kernel.org archives straight
+into your mailbox, so you get list mail without subscribing. It works
+with Gmail, JMAP (e.g. Fastmail), IMAP and local maildir. This is the
+best option for Gmail users, because the messages do not count
+against Gmail's delivery quotas.
+
+To install it, run::
+
+    pipx install korgalore
+
+See the korgalore_ documentation for how to configure it.
+
+.. _korgalore: https://korgalore.docs.kernel.org/
+
 Subscribing via NNTP
 --------------------
 NNTP is an old but still popular mechanism for exchanging usenet forum
