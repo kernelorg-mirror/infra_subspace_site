@@ -7,9 +7,8 @@ The subspace server is running:
 - mlmmj_
 - public-inbox_
 
-Postfix and mlmmj are configured exactly as recommended by the upstream
-docs, so please refer to the README.postfix_ file in the upstream
-repository for the reference.
+Postfix and mlmmj are set up as the upstream docs recommend, so please
+see the README.postfix_ file in the mlmmj repository for reference.
 
 .. _postfix: https://www.postfix.org/
 .. _mlmmj: https://codeberg.org/mlmmj/mlmmj
@@ -20,57 +19,42 @@ repository for the reference.
 Configuring public-inbox with mlmmj
 -----------------------------------
 
-Our public-inbox instance is configured to read messages directly from
-the mlmmj archives, with the goal to ensure that public-inbox feeds have
-the latest messages regardless of any delivery problems that may happen
-on the SMTP layer between us and subscribers.
+public-inbox reads messages directly from the mlmmj archives. This way,
+the archives get every message that the list accepted, even if delivery
+to some subscribers has problems.
 
-To achieve this, our automation creates lists with the following
-structure::
+mlmmj keeps one file per message in its archive directory, which is the
+same layout as an MH folder. public-inbox-watch can watch it as it is::
 
-    /var/spool/mlmmj/test.lists.linux.dev/
-        ...
-        maildir-archive/
-            new/
-            cur/
-            tmp/
-        archive -> maildir-archive/new
+    watch = mh:/var/spool/mlmmj/test.lists.linux.dev/archive
 
-This way mlmmj writes archives messages into the ``maildir-archive/new``
-directory and the public-inbox-watch process monitors it for any new
-arriving messages::
+This only does work when a new message arrives.
 
-    watch=maildir:/var/spool/mlmmj/test.lists.linux.dev/maildir-archive/
 
-This process is very IO-efficient and only runs when there are actual
-new entries in the archives directory.
+List headers
+------------
+
+mlmmj adds the standard ``List-*`` headers (RFC 2919 and RFC 2369) by
+itself. We only add one more, because many people filter on it::
+
+    X-Mailing-List: test@lists.linux.dev
+
 
 DMARC compliance measures
 -------------------------
 
-To be compliant with current DMARC policies, it is sufficient to
-configure mlmmj to make no changes to the headers or body of each
-processed message. Specifically, do not set the ``prefix`` or ``footer``
-tunables.
+To stay compatible with DMARC, mlmmj makes no changes to the body or to
+the signed headers of each message. In particular, we do not set the
+``prefix`` or ``footer`` tunables, because subject tags and footers
+would break the author's DKIM signature.
 
-We only add the following custom headers that are required for list
-operation (using the test list for illustration purposes)::
+We also:
 
-    Precedence: bulk
-    X-Mailing-List: test@lists.linux.dev
-    List-Id: <test.lists.linux.dev>
-    List-Subscribe: <mailto:test+subscribe@lists.linux.dev>
-    List-Unsubscribe: <mailto:test+unsubscribe@lists.linux.dev>
+- ARC-seal incoming posts, so receivers that trust our seal can accept
+  them even if the author's DKIM signature does not survive the trip
+- reject posts that fail DMARC when the author's domain has
+  ``p=reject``, because the subscribers' servers would refuse them too
 
-Note, that if there is no DKIM signature on the originating message, the
-DMARC verification will fail regardless of anything we do, but
-situations where there's a DMARC policy configured for a domain without
-a corresponding DKIM signature are invalid anyway.
-
-As a final note, more work will be required in the near future to remain
-DMARC-compliant. Once Replay-Resistant ARC becomes an accepted and
-enforced standard, setting the ``Forwarded-to:`` header and ARC-signing
-all recipients will become a required step. For more info, see:
-
-* https://datatracker.ietf.org/doc/draft-chuang-replay-resistant-arc/
-
+Note that if the original message has no DKIM signature, DMARC will
+fail no matter what we do. But a domain that has a DMARC policy and does
+not sign its mail is misconfigured anyway.
